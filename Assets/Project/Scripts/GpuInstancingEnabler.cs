@@ -3,15 +3,13 @@ using UnityEngine.Rendering;
 
 namespace Project.Scripts
 {
-    [RequireComponent(typeof(SkinnedMeshRenderer))]
+    [RequireComponent(typeof(MeshRenderer))]
     public class GpuInstancingEnabler : MonoBehaviour
     {
         private void Awake()
         {
-            /*GraphicsSettings.useScriptableRenderPipelineBatching = false;*/
             MaterialPropertyBlock materialPropertyBlock = new();
-            var meshRenderer = GetComponent<SkinnedMeshRenderer>();
-
+            var meshRenderer = GetComponent<MeshRenderer>();
             meshRenderer.SetPropertyBlock(materialPropertyBlock);
         }
     }
