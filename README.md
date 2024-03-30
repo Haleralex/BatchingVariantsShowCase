@@ -2,4 +2,5 @@ We got the way to significally improve our performance in games on Unity - batch
 1) static batching
 2) batching for not static objects with MeshRenderer - GPU Instancing
 3) batching for not static objects with SkinnedMeshRenderer - GPU Instancing
+   
 This project contains examples how to solve this 3 problems 
